@@ -1,13 +1,13 @@
-import os
-from pathlib import Path
-
 from simulation.src.data.loader import Material
 from simulation.src.features.transducer import Transducer
 from simulation.src.features.circuit import Transducer_acoustic_circuit
 
 
 class simulate_xMason():
-    def __init__(self, parameters=None):
+    def __init__(self, parameters=None, matpath=None):
+
+        # Material Path
+        self.matpath = matpath
 
         # Frequency Band
         self._fband = parameters['fband']
@@ -35,9 +35,7 @@ class simulate_xMason():
         ################################################################
         # LOAD MATERIALS --------->
         ################################################################
-        python_project_path = str(Path(os.getcwd()).parents[0])
-        ARG_MATERIAL_PATH = os.path.join(python_project_path, 'MASONmodel\data\materials.csv')
-        MatData = Material(ARG_MATERIAL_PATH)
+        MatData = Material(matpath)
 
 
         ################################################################
