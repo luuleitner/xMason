@@ -1,27 +1,9 @@
-"""
-   Copyright (C) 2022 Graz University of Technology. All rights reserved.
-
-   Author: Christoph Leitner, Graz University of Technology
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-"""
-
 import numpy as np
 import pandas as pd
 
 class Transducer():
     def __init__(self,
-                 diameter=None,
+                 radius=None,
                  substrateWHratio=None,
                  thickness_td=None,
                  thickness_el=None,
@@ -40,16 +22,16 @@ class Transducer():
 
 ######### Create pandas array with the geometry of transducer elements
         #
-        geometry_cols = ['Diameter', 'Width', 'Height', 'Thickness']
+        geometry_cols = ['Radius', 'Width', 'Height', 'Thickness']
         self._geometry = pd.DataFrame(np.zeros((len(self._stack_index[0]), len(geometry_cols))),
                                       index=self._stack_index,
                                       columns=geometry_cols)
         if substrateWHratio:
-            self._geometry.loc[['Tload', 'Telectrode', 'piezo', 'Belectrode', 'Bload'], 'Diameter'] = diameter
+            self._geometry.loc[['Tload', 'Telectrode', 'piezo', 'Belectrode', 'Bload'], 'Radius'] = radius
             self._geometry.loc[['Bsubstrate'], 'Width'] = substrateWHratio[0]
             self._geometry.loc[['Bsubstrate'], 'Height'] = substrateWHratio[1]
         else:
-            self._geometry.loc[['Tload', 'Telectrode', 'piezo', 'Belectrode', 'Bsubstrate', 'Bload'], 'Diameter'] = diameter
+            self._geometry.loc[['Tload', 'Telectrode', 'piezo', 'Belectrode', 'Bsubstrate', 'Bload'], 'Radius'] = radius
 
 
         self._geometry.loc[:, 'Thickness'] = [np.nan,

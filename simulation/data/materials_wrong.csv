@@ -1,9 +1,9 @@
 Material,roh,v,c33,h33,eps33,k,Source,Details
 Description,density,speed of sound,elastic stiffness constant,1/piezoelectric constant (d33),permittivity,electromechanical coupling coefficient,,
 Units,[kgm^-3],[ms^-1],[Nm^2],[Cm^-2],[F/m],[-],,
-P(VDF-TrFE),1880,2200,11300000000+452000000j,-4700000000,0.00000000004692-0.0000000000065688j,,,
+P(VDF-TrFE),1780,2140,8994000000-529800000j,-4700000000,0.00000000004793-0.000000000006106j,0.2201+0.01153j,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=598186,
 Silverink,3400,3600,,,,,,
-Kapton,1421,2414,,,,,https://web.stanford.edu/group/khuri-yakub/publications/90_Hadimioglu_01.pdf,
+Kapton,1420,2500,,,,,https://web.stanford.edu/group/khuri-yakub/publications/90_Hadimioglu_01.pdf,
 PET (Mylar),1180,2540,,,,,54 https://www.ndt.net/links/proper.htm,not really sure about SOS
 TPU,1230,1530,,,,,http://www.polymerphysics.net/pdf/JAcoustSocAmer_111_1782_02.pdf,
 Silpuran,1150,1100,,,,,"https://www.wacker.com/h/medias/6709-EN.pdf, https://www.google.com/url?
@@ -14,3 +14,4 @@ Ethylcellulose,1140,1200,,,,,https://asianjournalofchemistry.co.in/User/ViewFree
 Air,1.2041,343.21,,,,,https://en.wikipedia.org/wiki/Density_of_air,
 Water,997,1481,,,,,,
 Short,0,0,,,,,,
+#OLD#P(VDF-TrFE)#,1880,2400,11300000000+452000000j,-4700000000,0.00000000004692-0.0000000000065688j,,,

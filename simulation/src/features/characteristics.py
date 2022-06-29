@@ -1,21 +1,3 @@
-"""
-   Copyright (C) 2022 Graz University of Technology. All rights reserved.
-
-   Author: Christoph Leitner, Graz University of Technology
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-"""
-
 import pandas as pd
 import numpy as np
 
@@ -50,7 +32,7 @@ class Model_init():
     #
     # Piezoelectric constant: https://piezo.com/pages/piezo-terminology-glossary#:~:text=The%20piezoelectric%20constants%20relating%20the%20electric%20field%20produced%20by%20a,meter%20per%20newtons%2Fsquare%20meter.
     def Eport(self):
-        C0 = self._e33 * ((self._transducer_geometry.loc[(['piezo'], slice(None), slice(None)), 'Diameter'] ** 2) * np.pi / 4) \
+        C0 = self._e33 * ((self._transducer_geometry.loc[(['piezo'], slice(None), slice(None)), 'Radius'] ** 2) * np.pi / 4) \
              / self._transducer_geometry.loc[(['piezo'], slice(None), slice(None)), 'Thickness']
         N = C0 * self._h33
         return pd.DataFrame([C0, N], index=['C0', 'N']).T
@@ -68,12 +50,12 @@ class Model_init():
         Z0_Tload = acoustic_impedance(density=float(self._transducer_material.loc[(['Tload'], slice(None), slice(None)), 'roh'].values),
                                       sos=float(self._transducer_material.loc[(['Tload'], slice(None), slice(None)), 'v'].values),
                                       shape='circular',
-                                      diameter=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Diameter'].values))
+                                      radius=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Radius'].values))
 
         Z0_Bload = acoustic_impedance(density=float(self._transducer_material.loc[(['Tload'], slice(None), slice(None)), 'roh'].values),
                                       sos=float(self._transducer_material.loc[(['Tload'], slice(None), slice(None)), 'v'].values),
                                       shape='circular',
-                                      diameter=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Diameter'].values))
+                                      radius=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Radius'].values))
 
 
         # Electrode Layers
@@ -81,12 +63,12 @@ class Model_init():
         Z0_Tel = acoustic_impedance(density=float(self._transducer_material.loc[(['Telectrode'], slice(None), slice(None)), 'roh'].values),
                                     sos=float(self._transducer_material.loc[(['Telectrode'], slice(None), slice(None)), 'v'].values),
                                     shape='circular',
-                                    diameter=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Diameter'].values))
+                                    radius=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Radius'].values))
 
         Z0_Bel = acoustic_impedance(density=float(self._transducer_material.loc[(['Telectrode'], slice(None), slice(None)), 'roh'].values),
                                     sos=float(self._transducer_material.loc[(['Telectrode'], slice(None), slice(None)), 'v'].values),
                                     shape='circular',
-                                    diameter=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Diameter'].values))
+                                    radius=float(self._transducer_geometry.loc[(['Telectrode'], slice(None), slice(None)), 'Radius'].values))
 
 
         # Transducer Layer
@@ -94,16 +76,16 @@ class Model_init():
         Z0_piezo = acoustic_impedance(density=float(self._transducer_material.loc[(['piezo'], slice(None), slice(None)), 'roh'].values),
                                       sos=float(self._transducer_material.loc[(['piezo'], slice(None), slice(None)), 'v'].values),
                                       shape='circular',
-                                      diameter=float(self._transducer_geometry.loc[(['piezo'], slice(None), slice(None)), 'Diameter'].values))
+                                      radius=float(self._transducer_geometry.loc[(['piezo'], slice(None), slice(None)), 'Radius'].values))
 
 
         # Substrate Layer (Backing)
         #
-        if ~np.isnan(self._transducer_geometry.loc[(['Bsubstrate'], slice(None), slice(None)), 'Diameter'].values):
+        if ~np.isnan(self._transducer_geometry.loc[(['Bsubstrate'], slice(None), slice(None)), 'Radius'].values):
             Z0_substrate = acoustic_impedance(density=float(self._transducer_material.loc[(['Bsubstrate'], slice(None), slice(None)), 'roh'].values),
                                               sos=float(self._transducer_material.loc[(['Bsubstrate'], slice(None), slice(None)), 'v'].values),
                                               shape='circular',
-                                              diameter=float(self._transducer_geometry.loc[(['Bsubstrate'], slice(None), slice(None)), 'Diameter'].values))
+                                              radius=float(self._transducer_geometry.loc[(['Bsubstrate'], slice(None), slice(None)), 'Radius'].values))
         else:
             Z0_substrate = acoustic_impedance(density=float(self._transducer_material.loc[(['Bsubstrate'], slice(None), slice(None)), 'roh'].values),
                                               sos=float(self._transducer_material.loc[(['Bsubstrate'], slice(None), slice(None)), 'v'].values),
@@ -139,7 +121,7 @@ class Model_init():
 
 def acoustic_impedance(density=None, sos=None, shape=None, **kwargs):
     if shape == 'circular':
-        circular_area = ((kwargs.pop('diameter') ** 2) * np.pi) / 4
+        circular_area = ((kwargs.pop('radius') ** 2) * np.pi) / 4
         return ((density * sos) * circular_area)
     if shape == 'rectangular':
         rectangular_area = (kwargs.pop('width') * kwargs.pop('height'))
