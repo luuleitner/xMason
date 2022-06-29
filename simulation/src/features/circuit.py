@@ -17,9 +17,9 @@
 """
 
 from datetime import datetime
-from src.features.characteristics import Model_init
-from src.features.ports import acoustic_transmission_line
-from src.features.ports import mason_piezo, mason_ac_transducer, mason_transformer, mason_el_transducer
+from simulation.src.features.characteristics import Model_init
+from simulation.src.features.ports import acoustic_transmission_line
+from simulation.src.features.ports import mason_piezo, mason_ac_transducer, mason_transformer, mason_el_transducer
 
 class Transducer_acoustic_circuit():
     def __init__(self, transducer=None, fband=None):
