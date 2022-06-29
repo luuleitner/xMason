@@ -1,0 +1,6 @@
+https://raw.githubusercontent.com/luuleitner/xMason/main/data/dataset_ISAF22/T61.csv
+https://raw.githubusercontent.com/luuleitner/xMason/main/data/dataset_ISAF22/T62.csv
+https://raw.githubusercontent.com/luuleitner/xMason/main/data/dataset_ISAF22/T63.csv
+https://raw.githubusercontent.com/luuleitner/xMason/main/data/dataset_ISAF22/T64.csv
+https://raw.githubusercontent.com/luuleitner/xMason/main/data/dataset_ISAF22/T66.csv
+https://raw.githubusercontent.com/luuleitner/xMason/main/data/dataset_ISAF22/T67.csv
