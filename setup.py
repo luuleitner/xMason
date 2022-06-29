@@ -27,5 +27,5 @@ setup(
     license='Apache-2.0',
     author='Christoph Leitner',
     description='Design Automation for a Fully Printed P(VDF-TrFE) Transducer',
-    install_requires = ['tqdm', 'numpy', 'matplotlib', 'pandas'],
+    install_requires = ['os', 'pathlib', 'glob', 'datetime', 'tqdm', 'numpy', 'matplotlib', 'pandas'],
 )
