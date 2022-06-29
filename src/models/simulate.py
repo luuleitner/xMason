@@ -19,9 +19,9 @@
 import os
 from pathlib import Path
 
-from MASONmodel.src.data.loader import Material
-from MASONmodel.src.features.transducer import Transducer
-from MASONmodel.src.features.circuit import Transducer_acoustic_circuit
+from src.data.loader import Material
+from src.features.transducer import Transducer
+from src.features.circuit import Transducer_acoustic_circuit
 
 
 class simulate_xMason():
