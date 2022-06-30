@@ -4,12 +4,6 @@ Units,[kgm^-3],[ms^-1],[Nm^2],[Cm^-2],[F/m],[-],,
 P(VDF-TrFE),1880,2200,11300000000+452000000j,-4700000000,0.00000000004692-0.0000000000065688j,,,
 Silverink,3400,3600,,,,,,
 Kapton,1421,2414,,,,,https://web.stanford.edu/group/khuri-yakub/publications/90_Hadimioglu_01.pdf,
-PET (Mylar),1180,2540,,,,,54 https://www.ndt.net/links/proper.htm,not really sure about SOS
-TPU,1230,1530,,,,,http://www.polymerphysics.net/pdf/JAcoustSocAmer_111_1782_02.pdf,
-Silpuran,1150,1100,,,,,"https://www.wacker.com/h/medias/6709-EN.pdf, https://www.google.com/url?
-sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjR58_Qhqr2AhXMjqQKHdRzCO0QF
-8220%2F21%2F2%2F421%2Fpdf&usg=AOvVaw3mESs8Ws0ALmsSjPIXQ9VN",
-PDMS,950,1076,,,,,,
 Ethylcellulose,1140,1200,,,,,https://asianjournalofchemistry.co.in/User/ViewFreeArticle.aspx?ArticleID=23_1_4,not really sure about SOS
 Air,1.2041,343.21,,,,,https://en.wikipedia.org/wiki/Density_of_air,
 Water,997,1481,,,,,,

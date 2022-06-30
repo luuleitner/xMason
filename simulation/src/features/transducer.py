@@ -1,3 +1,22 @@
+"""
+   Copyright (C) 2022 Graz University of Technology. All rights reserved.
+
+   Author: Christoph Leitner
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at:
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+"""
+
+
 import numpy as np
 import pandas as pd
 
@@ -10,8 +29,6 @@ class Transducer():
                  thickness_sub=None,
                  material=None,
                  **kwargs):
-
-
 
 ######### Create a layer stack list of the full circuit model transducer
         #
@@ -41,18 +58,6 @@ class Transducer():
                                           thickness_sub,
                                           np.nan]
         self._geometry.replace(0, np.nan, inplace=True)
-
-
-        # self._geometry = pd.DataFrame([np.repeat(np.expand_dims(diameter, axis=[0,1]), len(self._stack_index[0])),
-        #                                [np.nan,
-        #                                 thickness_el,
-        #                                 thickness_td,
-        #                                 thickness_el,
-        #                                 thickness_sub,
-        #                                 np.nan]],
-        #                               index=['Diameter',
-        #                                      'Thickness'],
-        #                               columns=self._stack_index).T
 
 
 ######### Create a pandas array with the materials of transducer elements
