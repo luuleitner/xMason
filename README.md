@@ -20,6 +20,7 @@ An adapted Mason model to calculate impedance responses of ultrasonic transducer
       publisher={IEEE},
       doi={}
     }
+```
     
 # License
 
