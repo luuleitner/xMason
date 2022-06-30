@@ -5,3 +5,7 @@
 
 # xMason
 An adapted Mason model to calculate impedance responses of ultrasonic transducers
+
+<p align="center">
+<img src="https://github.com/luuleitner/xMason/blob/main/data/MasonModel.jpg" height="400">
+</p>
