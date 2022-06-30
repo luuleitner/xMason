@@ -1,4 +1,7 @@
-# xMasonTD
-xMasonTD: Adapted Mason model for the analyses of element layer thicknesses and resonances in a fully printed transducer.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This repository is currently being updated and published.
+       
+
+# xMason
+An adapted Mason model to calculate impedance responses of ultrasonic transducers
