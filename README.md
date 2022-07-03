@@ -4,14 +4,15 @@
        
 
 # xMason
-This repository contains an adapted Mason model to calculate impedance responses of printed ultrasonic transducers. \n
-
-For the simulation of the electro-acoustic behaviour of transducers we use a simulation model based on the transducer circuit proposed by Mason (1942). Mason suggested a circuit of lumped elements as a replica to describe the electro-mechanical behaviour of a piezoelectric element. 
+This repository contains an adapted Mason model to calculate impedance responses of printed ultrasonic transducers. For the simulation of the electro-acoustic behaviour of transducers we use a simulation model based on the transducer circuit proposed by Mason (1942). Mason suggested a circuit of lumped elements as a replica to describe the electro-mechanical behaviour of a piezoelectric element. 
 
 <p align="center">
 <img src="https://github.com/luuleitner/xMason/blob/main/data/MasonModel.jpg" height="400">
 </p>
-In his model, the acoustic transmission line is replaced by an equivalent electric T-network (see figure above central part, light greay color). It connects via an electro-mechanical transformer to an electrical interface consisting of two in-parallel connected capacitors with inverted capacitance and a terminal for in- and output voltages. 
+Mason model characteristics:
+- acoustic transmission line of the transducer is replaced by an equivalent electric T-network (see figure above central part). 
+- Mason's transformer converts electrical impedance's into acoustical and vice versa. 
+- an electrical interface consisting of two in-parallel connected capacitors with inverted capacitance and a terminal for in- and output voltages. 
 
 The main difference between our simulation model and the original circuit proposed by Mason are additional lossless acoustic transmission lines at the top and bottom of the transducer representing: air (blue), electrodes (dark grey), substrate (brown). Using transmission line theory, the impedance loads imposed by further acoustic structures are propagated towards the piezoelectric element where they act as input loads for the T-net. Thus, the acoustic behaviour of substructures, for example, air, electrodes, substrates can be considered in the simulation. 
 
