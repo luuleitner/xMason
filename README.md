@@ -20,7 +20,7 @@ The main difference between our simulation model and the original circuit propos
 A frequency band [f{low}, f_{high}] is used to calculate the resulting electrical impedance, i.e. the impedance seen at the electrical connection across capacitor C_0. 
 
 
-* *W. P. Mason, Electromechanical Transducers and Wave Filters, 1st ed. New York: D. van Nostrand Company Inc., 1942.*
+**W. P. Mason, Electromechanical Transducers and Wave Filters, 1st ed. New York: D. van Nostrand Company Inc., 1942.*
 
 
 ## Introduction and Usage
