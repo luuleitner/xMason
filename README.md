@@ -10,6 +10,7 @@ This repository contains an adapted Mason model to calculate impedance responses
 <img src="https://github.com/luuleitner/xMason/blob/main/data/MasonModel.jpg" height="400">
 </p>
 Mason model characteristics:
+
 - acoustic transmission line of the transducer is replaced by an equivalent electric T-network (see figure above central part). 
 - Mason's transformer converts electrical impedance's into acoustical and vice versa. 
 - an electrical interface consisting of two in-parallel connected capacitors with inverted capacitance and a terminal for in- and output voltages. 
