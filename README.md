@@ -10,6 +10,9 @@ An adapted Mason model to calculate impedance responses of ultrasonic transducer
 <img src="https://github.com/luuleitner/xMason/blob/main/data/MasonModel.jpg" height="400">
 </p>
 
+## Introduction and Usage
+This repository contains the Python source code of `xMason` as well as the data set published in the IEEE ISAF recorded with a vector network analyser on 6 printed PVDF transducers. A brower based online service is provided via [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb)
+
 ## <a name="citation_1"></a> Publications
 ```
 [1] @inproceedings{c:leitner2022,
@@ -18,8 +21,7 @@ An adapted Mason model to calculate impedance responses of ultrasonic transducer
       author={Leitner, Christoph and Keller, Kirill and Thurner, Stephan and Baumgartner, Christian and Greco, Francesco and Scharfetter, Hermann and Schröttner, Jörg},
       journal = {2022 IEEE International Symposium on Applications of Ferroelectrics (ISAF)},
       publisher={IEEE},
-      doi={}
-    }
+      }
 ```
     
 # License
