@@ -4,14 +4,16 @@
        
 
 # xMason
-An adapted Mason model to calculate impedance responses of ultrasonic transducers
+This repository contains an adapted Mason model to calculate impedance responses of printed ultrasonic transducers. For the simulation of the electro-acoustic behaviour of transducers we use a simulation model based on the transducer circuit proposed by Mason (1942). Mason suggested a circuit of lumped elements as a replica to describe the electro-mechanical behaviour of a piezoelectric element. In his model, the acoustic transmission line is replaced by an equivalent electric T-network. It connects via an electro-mechanical transformer to an electrical interface consisting of two in-parallel connected capacitors with inverted capacitance and a terminal for in- and output voltages. The main difference between our simulation model and the original circuit proposed by Mason are additional lossless acoustic transmission lines at the top and bottom of the transducer representing: air (blue), electrodes (dark grey), substrate (brown). Using transmission line theory, the impedance loads imposed by further acoustic structures are propagated towards the piezoelectric element where they act as input loads for the T-net. Thus, the acoustic behaviour of substructures, for example, air, electrodes, substrates can be considered in the simulation. 
 
 <p align="center">
 <img src="https://github.com/luuleitner/xMason/blob/main/data/MasonModel.jpg" height="400">
 </p>
 
+A frequency band [f{low}, f_{high}] is used to calculate the resulting electrical impedance, i.e. the impedance seen at the electrical connection across capacitor C_0. 
+
 ## Introduction and Usage
-This repository contains the Python source code of `xMason` as well as the data set published in the IEEE ISAF recorded with a vector network analyser on 6 printed PVDF transducers. A brower based online service is provided via [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb)
+This repository contains the python source code of `xMason` as well as the data set published in the 2022 IEEE ISAF conference recorded with a vector network analyser on 6 printed PVDF transducers. A browser based online service for claculations is available via [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb)
 
 ## <a name="citation_1"></a> Publications
 ```
