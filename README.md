@@ -4,7 +4,9 @@
        
 
 # xMason
-This repository contains an adapted Mason model to calculate impedance responses of printed ultrasonic transducers. For the simulation of the electro-acoustic behaviour of transducers we use a simulation model based on the transducer circuit proposed by Mason*. Mason suggested a circuit of lumped elements as a replica to describe the electro-mechanical behaviour of a piezoelectric element. 
+This repository contains an adapted Mason model to calculate impedance responses of printed ultrasonic transducers. 
+
+For the simulation of the electro-acoustic behaviour of transducers we use a simulation model based on the transducer circuit proposed by Mason*. Mason suggested a circuit of lumped elements as a replica to describe the electro-mechanical behaviour of a piezoelectric element. 
 
 <p align="center">
 <img src="https://github.com/luuleitner/xMason/blob/main/data/MasonModel.jpg" height="400">
