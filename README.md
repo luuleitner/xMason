@@ -26,7 +26,7 @@ A frequency band [f{low}, f_{high}] is used to calculate the resulting electrica
 **W. P. Mason, Electromechanical Transducers and Wave Filters, 1st ed. New York: D. van Nostrand Company Inc., 1942.*
 
 ## Usage
-This repository contains the python source code of `xMason` as well as the data set published in the 2022 IEEE ISAF conference recorded with a vector network analyser on 6 printed PVDF transducers. A browser based online service for claculations is available via [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb)
+This repository contains the python source code of `xMason` as well as the data set published in the 2022 IEEE ISAF conference recorded with a vector network analyser on 6 printed PVDF transducers. A browser based online service for calculations is available via [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb)
 
 ## <a name="citation_1"></a> Publications
 ```
