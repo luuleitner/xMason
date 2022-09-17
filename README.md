@@ -4,7 +4,7 @@
        
 
 # xMason
-This repository contains a virtual transducer based on an adapted Mason model. You can use the Python source code or the Google Colab notebook to calculate impedance responses of printed ultrasonic transducers. 
+This repository contains a virtual transducer based on an adapted Mason model. You can use the Python source code or the  [Google Colab notebook](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb) to calculate impedance responses of printed ultrasonic transducers. 
 
 ## Model details
 For the simulation of the electro-acoustic behaviour of transducers we use a simulation model based on the transducer circuit proposed by Mason*. Mason suggested a circuit of lumped elements as a replica to describe the electro-mechanical behaviour of a piezoelectric element. 
