@@ -22,7 +22,7 @@ import numpy as np
 
 
 def frequency_spectrum(F):
-    return np.arange(F[0] * 10 ** 6, F[1] * 10 ** 6, 1 * 10 ** 6, dtype=int)
+    return np.arange(F[0] * 10 ** 6, F[1] * 10 ** 6, 1 * 10 ** 3, dtype=int)
 
 
 # PROPAGATION CONSTANT (gamma)
