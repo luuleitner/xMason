@@ -37,7 +37,8 @@ class simulate_xMason():
         else:
             self._substrateWHratio = None
         self._thickness_td= parameters['thickness_td']
-        self._thickness_el = parameters['thickness_el']
+        self._thickness_tel = parameters['thickness_tel']
+        self._thickness_bel = parameters['thickness_bel']
         self._thickness_sub = parameters['thickness_sub']
 
         # Materials
@@ -68,7 +69,8 @@ class simulate_xMason():
         xMason_Transducer = Transducer(radius=self._radius,
                                        substrateWHratio=self._substrateWHratio,
                                        thickness_td=self._thickness_td,
-                                       thickness_el=self._thickness_el,
+                                       thickness_tel=self._thickness_tel,
+                                       thickness_bel=self._thickness_bel,
                                        thickness_sub=self._thickness_sub,
                                        material=MatData.material,
                                        Tload=self._Tload,

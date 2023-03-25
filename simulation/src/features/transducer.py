@@ -25,7 +25,8 @@ class Transducer():
                  radius=None,
                  substrateWHratio=None,
                  thickness_td=None,
-                 thickness_el=None,
+                 thickness_tel=None,
+                 thickness_bel=None,
                  thickness_sub=None,
                  material=None,
                  **kwargs):
@@ -52,9 +53,9 @@ class Transducer():
 
 
         self._geometry.loc[:, 'Thickness'] = [np.nan,
-                                          thickness_el,
+                                          thickness_tel,
                                           thickness_td,
-                                          thickness_el,
+                                          thickness_bel,
                                           thickness_sub,
                                           np.nan]
         self._geometry.replace(0, np.nan, inplace=True)
