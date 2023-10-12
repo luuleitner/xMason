@@ -2,7 +2,7 @@ Material,roh,v,c33,h33,eps33,k,Source,Details
 Description,density,speed of sound,elastic stiffness constant,1/piezoelectric constant (d33),permittivity,electromechanical coupling coefficient,,
 Units,[kgm^-3],[ms^-1],[Nm^2],[Cm^-2],[F/m],[-],,
 P(VDF-TrFE),1880,2200,11300000000+452000000j,-4700000000,0.00000000004692-0.0000000000065688j,,,
-PZT5A,7800,4500,1.63*10**11+j*7.409*10**7,2.38*10**9+j*1.19*10**7,5.43*10**-9-j*4.85*10**-11,0.43−j*0.0004,https://iopscience.iop.org/article/10.1088/1361-665X/acdd39,
+PZT5A,7800,4500,163000000000+74090000j,2380000000+11900000j,0.00000000543-0.0000000000485j,0.43−j*0.0004,https://iopscience.iop.org/article/10.1088/1361-665X/acdd39,
 Epoxy,1950,2130,,,,,,https://www.signal-processing.com/table.php
 Nylon,1150,2620,,,,,https://www.engineeringtoolbox.com/sound-speed-solids-d_713.html,
 Silverink,3400,3600,,,,,,
