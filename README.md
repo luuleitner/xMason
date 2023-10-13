@@ -1,8 +1,5 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luuleitner/xMason/blob/main/xmasonsim.ipynb)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-### News
-2023.10.13 Added a script to simulate the transducer build during the IEEE waves and transducer school at TU Delft (October 9.–13.2023)
        
 
 # xMason
